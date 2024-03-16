@@ -14,6 +14,7 @@ clone this repo then oopen index.html
 
 Instructions on how to use your project and any relevant examples.
 
+
 ## License
 
-Information about the license for your project.
+[MIT License](LICENCE)
