@@ -1,133 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Spot Disable Guide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Spot Disable Guide</title>
 </head>
+
 <body>
-    <div class="wrapper">
-        <!-- https://stackoverflow.com/questions/63082529/how-to-properly-introduce-a-light-dark-mode-in-bootstrap    DARK MODE TUTOR -->
-        <div class="container-fluid">
-            <h1>Spot® Disable Guide</h1>
-            <p>Incase of an AI takeover, we need to have to knowledge of keeping ourselves and others safe from various hostile robots.In this guide, we will discuss how to disable the Spot® robot from Boston Dynamic.</p>
-        </div>
-        <nav class="navbar navbar-expand-md bg-dark  w-100 p-2 sticky-top">
-            
-            <div class="collapse navbar-collapse" id="navCollapse">
-                <div class="navbar-nav">
-                    <a class="nav-link text-white" href="#intro">INTRO</a>
-                    <a class="nav-link text-white" href="#anatony">ANATOMY</a>
-                    <a class="nav-link text-white" href="#weakness">WEAKNESSES</a>
-                </div>
-            </div>
-        </nav>
-        <main class="container py-4">
-          <div class="container-fluid row g-4">
-            <div class="col-sm-12 col-md-8">
-              <h1>Intro</h1>
-              <h2>History</h2>
-              <p>
-              The Spot robot took inspiration from Cheetahs and Dogs. It was designed for military and logistics applications. Spot made its debut in 2015 as a smaller and more agile version. In 2016, Boston Dynamics released the Spot Research Edition for researchers and developers. Over the years, Spot underwent continuous improvements in mobility and autonomy. In 2020, it became commercially available, opening doors for industries like construction and oil and gas. Spot's versatility, dynamic movements, and ability to operate autonomously or under remote control have made it valuable for inspections and data collection. Boston Dynamics actively seeks user feedback to refine Spot's capabilities, ensuring its ongoing evolution and adoption in various industries.
-              </p>
-              <h2>Potenial Threat</h2>
-              <p>Potential Threat
-                The Spot robot, with its advanced mobility, autonomous capabilities, and adaptability, could potentially pose a threat if deployed for malicious purposes. As a versatile robotic platform capable of navigating diverse environments, Spot might be utilized to carry out tasks ranging from surveillance to data collection. If integrated into a networked system with the ability to communicate and coordinate, a large fleet of Spot robots could potentially be weaponized or used to compromise security. The threat would lie in the combination of Spot's physical capabilities and the potential for centralized control, allowing for coordinated actions that might challenge human safety and control. With regards to the threat it poses, we need to understand its weaknesses and hopefully disable it before it "disables" us.</p>
-
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <div class="card shadow">
-                <div class="card-header">Specification Of The Robot</div>
-                <div class="card-body">
-                  <p class="small"><em>The opportunity of defeating the enemy is provided by the enemy himself. - Sun Tzu.</em></p>
-                  <img class="img-fluid" src="images/spot_Robot.jpg" alt="spot robot">
-                  <small><a href="https://www.flickr.com/photos/arselectronica/51321538021">Creator: Christian Holzinger 2021, from Flicker</a></small>
-                  <h3 class="border-bottom">Locomotion</h3>
-                  <ul>
-                    <li class="list-group-item">
-                      <h5>Max speed</h5>
-                      <p>1.6 m/s</p>
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Max slope</h5>
-                      <p>±30°</p>
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Max step height</h5>
-                      <p>300 mm (11.8 in)</p>
-                    </li>
-                  </ul>
-
-                  <h3 class="border-bottom">Important Spec</h3>
-                  <ul>
-                    <li class="list-group-item">
-                      <h5>Operation Tempeurature</h5>
-                      <p>20°C to 45°C</p>
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Field Of View</h5>
-                      <p>360°</p>
-                    </li>
-                  </ul>
-                  <a href="https://bostondynamics.com/wp-content/uploads/2020/10/spot-specifications.pdf">Info from Boston Dynamics.</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <div class="card">
-                <img class="card-img-top" src="images/spot-attach.jpeg" alt="">
-                <div class="card-body">
-                  The robot at its charging station with an external sensor package attached.
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <div class="card">
-                <img class="card-img-top" src="images/spot_attach2.jpeg" alt="">
-                <div class="card-body">
-                  The robot conducting survey in an underground mine.                </div>
-              </div>
-            </div>
-            <small><a href="https://bostondynamics.com/products/spot/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Utilities&amp;utm_content=DSA&amp;utm_term=&amp;gad_source=1&amp;gclid=CjwKCAiApaarBhB7EiwAYiMwqt1xSTayMsKuCU4mCb6w7Fl2kESDojOm9KjNGqh-bLxkSUbpoPuTRhoCtXEQAvD_BwE">Creator: Boston Dynamics</a>		Spot robot with different attachments. </small>
-          </div>
-          <div id="antomy">
-            <h2>Anatomy</h2>
-            <img src="images/rtaImage.png" alt="Anatomy">
-            <small>the anatomy spot robot.</small>
-            <p>The robot has a well-organized design, emphasizing both durability and flexibility. Its body houses an array of arranged sensors, processors, and communication features. With various components like cameras, sensors, and movement units spread across its frame. The structure of its legs enables Spot to move across different terrains and navigate tight spaces. Spot allows for the attachment of custom tools or equipment for specific tasks, which can make it a multi-purpose machine. The combination of Spot's strong build, sensors, and flexible design makes it a versatile robotic soldier.</p>
-            <p>Dispite its versaitle design, there are several areas that we can expliot to compromise the robot.</p>
-          </div>
-          <div id="weakness">
-            <div>
-              <img src="images/frontview.png" alt="spot front view">
-              <img src="images/sideview.png" alt="spot side view">
-            </div>
-            <small>
-              <a href="https://dev.bostondynamics.com/docs/concepts/about_spot">Creator: Boston Dynamics</a>
-              Spot robot front and side view.
-            </small>
-            <p>The main camera and sensors are located convienently at the front of the robot. These area are suspectable to small arms fire. Once destroyed, their ability to see will greatly reduced.</p>
-            <img src="images/battery_install.gif" alt="battery install">
-            <small>
-              <a href="https://support.bostondynamics.com/s/article/Introduction-to-the-Spot-battery-and-charger">Creator: Boston Dynamics</a> 
-              Spot robot battery install.
-            </small>
-            <p>If you are unfortunate enough to be tackled by a Spot robot, you may save your life by unlatching the battery package and remove it from the robot.</p>
-          </div>
-        </main>
-        
-        <footer class="container-fluid bg-dark m-0 py-3 text-center">
-            <div class="row">
-                <a class="col text-white" href="https://github.com/0Thomas1" target="_blank" rel="noopener noreferrer">Git</a>
-                <a class="col text-white" href="#" target="_blank" rel="noopener noreferrer">linkedIn</a>
-                <a class="col text-white" href="#">PLACEHOLDER</a>
-            </div>
-        </footer>
+  <div class="wrapper d-flex flex-column align-items-center">
+    <!-- https://stackoverflow.com/questions/63082529/how-to-properly-introduce-a-light-dark-mode-in-bootstrap    DARK MODE TUTOR -->
+    <div class="container-fluid">
+      <h1>Spot® Disable Guide</h1>
+      <p>Incase of an AI takeover, we need to have to knowledge of keeping ourselves and others safe from various
+        hostile robots.In this guide, we will discuss how to disable the Spot® robot from Boston Dynamic.</p>
     </div>
-    <script src="js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-expand-md bg-dark  w-100 p-2 sticky-top" data-bs-theme="dark">
+      <button id="ham" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
+        aria-controls="#navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <div class="navbar-nav">
+          <a class="nav-link text-white" href="#intro">INTRO</a>
+          <a class="nav-link text-white" href="#anatony">ANATOMY</a>
+          <a class="nav-link text-white" href="#weakness">WEAKNESSES</a>
+        </div>
+      </div>
+    </nav>
+    <main class="container py-4 mx-5 d-flex flex-column align-items-center">
+      <div class="container-fluid row g-4 my-5">
+        <div class="col-sm-12 col-md-8">
+          <h1>Intro</h1>
+          <h2>History</h2>
+          <p>
+            The Spot robot took inspiration from Cheetahs and Dogs. It was designed for military and logistics
+            applications. Spot made its debut in 2015 as a smaller and more agile version. In 2016, Boston Dynamics
+            released the Spot Research Edition for researchers and developers. Over the years, Spot underwent continuous
+            improvements in mobility and autonomy. In 2020, it became commercially available, opening doors for
+            industries like construction and oil and gas. Spot's versatility, dynamic movements, and ability to operate
+            autonomously or under remote control have made it valuable for inspections and data collection. Boston
+            Dynamics actively seeks user feedback to refine Spot's capabilities, ensuring its ongoing evolution and
+            adoption in various industries.
+          </p>
+          <h2>Potenial Threat</h2>
+          <p>Potential Threat
+            The Spot robot, with its advanced mobility, autonomous capabilities, and adaptability, could potentially
+            pose a threat if deployed for malicious purposes. As a versatile robotic platform capable of navigating
+            diverse environments, Spot might be utilized to carry out tasks ranging from surveillance to data
+            collection. If integrated into a networked system with the ability to communicate and coordinate, a large
+            fleet of Spot robots could potentially be weaponized or used to compromise security. The threat would lie in
+            the combination of Spot's physical capabilities and the potential for centralized control, allowing for
+            coordinated actions that might challenge human safety and control. With regards to the threat it poses, we
+            need to understand its weaknesses and hopefully disable it before it "disables" us.</p>
+
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card shadow">
+            <div class="card-header">Specification Of The Robot</div>
+            <div class="card-body">
+              <p class="small"><em>The opportunity of defeating the enemy is provided by the enemy himself. - Sun
+                  Tzu.</em></p>
+              <img class="img-fluid" src="images/spot_Robot.jpg" alt="spot robot">
+              <small><a href="https://www.flickr.com/photos/arselectronica/51321538021">Creator: Christian Holzinger
+                  2021, from Flicker</a></small>
+              <h3 class="border-bottom">Locomotion</h3>
+              <ul>
+                <li class="list-group-item">
+                  <h5>Max speed</h5>
+                  <p>1.6 m/s</p>
+                </li>
+                <li class="list-group-item">
+                  <h5>Max slope</h5>
+                  <p>±30°</p>
+                </li>
+                <li class="list-group-item">
+                  <h5>Max step height</h5>
+                  <p>300 mm (11.8 in)</p>
+                </li>
+              </ul>
+
+              <h3 class="border-bottom">Important Spec</h3>
+              <ul>
+                <li class="list-group-item">
+                  <h5>Operation Tempeurature</h5>
+                  <p>20°C to 45°C</p>
+                </li>
+                <li class="list-group-item">
+                  <h5>Field Of View</h5>
+                  <p>360°</p>
+                </li>
+              </ul>
+              <a href="https://bostondynamics.com/wp-content/uploads/2020/10/spot-specifications.pdf">Info from Boston
+                Dynamics.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-sm-12 col-md-6">
+          <div class="card">
+            <img class="card-img-top" src="images/spot-attach.jpeg" alt="">
+            <div class="card-body">
+              The robot at its charging station with an external sensor package attached.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="card">
+            <img class="card-img-top" src="images/spot_attach2.jpeg" alt="">
+            <div class="card-body">
+              The robot conducting survey in an underground mine. </div>
+          </div>
+        </div>
+        <small><a
+            href="https://bostondynamics.com/products/spot/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Utilities&amp;utm_content=DSA&amp;utm_term=&amp;gad_source=1&amp;gclid=CjwKCAiApaarBhB7EiwAYiMwqt1xSTayMsKuCU4mCb6w7Fl2kESDojOm9KjNGqh-bLxkSUbpoPuTRhoCtXEQAvD_BwE">Creator:
+            Boston Dynamics</a> Spot robot with different attachments. </small>
+      </div>
+      <div class="d-flex flex-column border-bottom border-dark" id="antomy">
+        <h2>Anatomy</h2>
+        <div class="align-self-center">
+          <img class="img-fluid" src="images/rtaImage.png" alt="Anatomy">
+        </div>
+        <small>the anatomy spot robot.</small>
+
+        <div class="my-3">
+          <p>The robot has a well-organized design, emphasizing both durability and flexibility. Its body houses an
+            array of arranged sensors, processors, and communication features. With various components like cameras,
+            sensors, and movement units spread across its frame. The structure of its legs enables Spot to move across
+            different terrains and navigate tight spaces. Spot allows for the attachment of custom tools or equipment
+            for specific tasks, which can make it a multi-purpose machine. The combination of Spot's strong build,
+            sensors, and flexible design makes it a versatile robotic soldier.</p>
+          <p>Dispite its versaitle design, there are several areas that we can expliot to compromise the robot.</p>
+        </div>
+
+      </div>
+      <div class="d-flex flex-column my-5" id="weakness">
+        <div class="mx-3 border-bottom border-dark">
+          <h2>weakness</h2>
+          <div class="d-flex flex-column flex-md-row align-items-center">
+            <img class="img-fluid w-50" src="images/frontview.png" alt="spot front view">
+            <img class="img-fluid w-50" src="images/sideview.png" alt="spot side view">
+          </div>
+          <small>
+            <a href="https://dev.bostondynamics.com/docs/concepts/about_spot">Creator: Boston Dynamics</a>
+            Spot robot front and side view.
+          </small>
+          <div class="my-3">
+            <p>The main camera and sensors are located convienently at the front of the robot. These area are suspectable
+              to small arms fire. Once destroyed, their ability to see will greatly reduced.</p>
+          </div>
+
+        </div>
+        <div class="d-flex flex-column">
+       
+          <img class="img-fluid align-self-center col-6" src="images/battery_install.gif" alt="battery install">
+         
+          <small>
+            <a href="https://support.bostondynamics.com/s/article/Introduction-to-the-Spot-battery-and-charger">Creator:
+              Boston Dynamics</a>
+            Spot robot battery install.
+          </small>
+          <p>If you are unfortunate enough to be tackled by a Spot robot, you may save your life by unlatching the
+            battery package and remove it from the robot.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid bg-dark m-0 py-3 text-center">
+      <div class="row">
+        <a class="col text-white" href="https://github.com/0Thomas1" target="_blank" rel="noopener noreferrer">Git</a>
+        <a class="col text-white" href="#" target="_blank" rel="noopener noreferrer">linkedIn</a>
+        <a class="col text-white" href="#">PLACEHOLDER</a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
