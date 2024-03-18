@@ -1,20 +1,19 @@
 # Project Title
 
-Spot distruction guide
-## Table of Contents
+Spot destruction guide
 
-- [Installatio and Usage](#installation)
-- [License](#license)
+## Link
 
-## Installation
+[Click Here](https://0thomas1.github.io/2350A3/)
+## Installation and Usage
 
-clone this repo then oopen index.html
-
-## Usage
-
-Instructions on how to use your project and any relevant examples.
-
+clone this repo then open index.html
 
 ## License
 
-[MIT License](LICENCE)
+[MIT License](LICENSE)
+
+## Tech stack
+
+Bootstrap CSS
+HTML
